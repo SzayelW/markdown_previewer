@@ -1,5 +1,10 @@
-.divContainer{
-  width: calc(100vw/2);
-  height: 100vh;
-  border: 2px solid black;
+.titleApp{
+  width:100%;
+  text-align: center;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.mainApp{
+  display: flow-root;
 }
