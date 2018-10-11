@@ -8,11 +8,7 @@ let divStyles = {
   top: 0
 }
 export default class DivContainer extends React.Component{
-  constructor(props){
-    super(props);
-  }
   render(){
-    let children = this.props.children;
     return (
       <div className="divContainer" style={ Object.assign({},divStyles, this.props.addStyles)}>
         <h1>{this.props.title}</h1>

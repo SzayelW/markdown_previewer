@@ -9,7 +9,7 @@ let style = {
 export default class Editor  extends React.Component{
   render(){
     return (
-      <textarea style={style}></textarea>
+      <textarea style={style} value={this.props.value} onChange={ this.props.handleChange }></textarea>
     );
   }
 }
