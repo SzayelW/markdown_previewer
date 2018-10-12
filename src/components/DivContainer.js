@@ -19,8 +19,14 @@ export default class DivContainer extends React.Component{
     return (
       <div className={"divContainer "+(!this.props.extraClass ? '' : this.props.extraClass)} style={ Object.assign({},divStyles, this.props.addStyles)}>
         <div className="header">
-          <h1 style={subHijosHeader} >{this.props.title}</h1>
-          {this.props.handleClear && <button onClick={this.props.handleClear} style={subHijosHeader} >Clear</button>}
+          <div style={subHijosHeader}>
+            <h1 >{this.props.title}</h1>
+          </div>
+          <div className="botones" style={subHijosHeader}>
+            {this.props.handleClear && <button onClick={this.props.handleClear} style={subHijosHeader} >Clear</button>}
+            {this.props.handleSave && <button onClick={this.props.handleSave} style={subHijosHeader} >Save</button>}
+            {this.props.handleLoad && <button onClick={this.props.handleLoad} style={subHijosHeader} >Load</button>}
+          </div>
         </div>
         <div className="childrenContainer" style={ !this.props.editor ? stylesChildrenContainer : Object.assign({},stylesChildrenContainer, {overflowY: 'hidden'}) } >
           {this.props.children}

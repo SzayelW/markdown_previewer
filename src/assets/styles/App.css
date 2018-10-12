@@ -39,3 +39,9 @@ th,td{
   box-shadow: 4px 4px 4px 3px #7ea1b4 inset;
   padding: 0px 5px;
 }
+.botones{
+  float: right;
+}
+.botones button{
+  border: 0px;
+}
