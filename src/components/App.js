@@ -3,15 +3,12 @@ import './../assets/styles/App.css';
 import DivContainer from './DivContainer';
 import Editor from './Editor';
 import Previewer from './Previewer';
+import {API, INITIAL_STATE} from './../consts/consts';
 
-const API = "https://api.myjson.com/bins/yv47g";
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      text: '# Start writing here...',
-      fetchData: '',
-    };
+    this.state = INITIAL_STATE;
     this.handleChange = this.handleChange.bind(this);
     this.handleClear = this.handleClear.bind(this);
     this.handleSave = this.handleSave.bind(this);
