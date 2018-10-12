@@ -13,6 +13,7 @@
 .mainApp{
   display: flow-root;
   height: 100vh;
+  min-width: 600px;
 }
 .header,.mainApp{
   background-color: var(--bg-color);
@@ -40,7 +41,7 @@ th,td{
   padding: 0px 5px;
 }
 .botones{
-  float: right;
+  margin-left: 15px;
 }
 .botones button{
   border: 0px;
