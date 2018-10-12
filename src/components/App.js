@@ -25,11 +25,11 @@ class App extends Component {
   render() {
     return (
       <div className="mainApp">
-        <div className="titleApp">Mardown Previewer</div>
-        <DivContainer handleClear={this.handleClear} title="Editor">
-          <Editor editor={true} value={this.state.text}  handleChange={this.handleChange} />
+        <div className="titleApp"><h1>Markdown Previewer</h1></div>
+        <DivContainer editor={true} handleClear={this.handleClear} title="Editor">
+          <Editor  value={this.state.text}  handleChange={this.handleChange} />
         </DivContainer>
-        <DivContainer title="Previewer" addStyles={  {right:0} }>
+        <DivContainer title="Previewer" extraClass="previewerContainer" addStyles={  {right:0} }>
           <Previewer text={ this.state.text } />
         </DivContainer>
       </div>

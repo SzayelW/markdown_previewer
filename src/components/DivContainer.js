@@ -9,17 +9,20 @@ let subHijosHeader = {
   display: 'inline-block'
 };
 let stylesChildrenContainer = {
-  maxHeight: 'calc(100vh - 200px)', height: 'calc(100vh - 200px)', overflowY: 'auto', overflowX: 'hidden'
+  maxHeight: 'calc(100vh - 200px)',
+  height: 'calc(100vh - 200px)',
+  overflowX: 'hidden',
+  overflowY: 'auto',
 };
 export default class DivContainer extends React.Component{
   render(){
     return (
-      <div className="divContainer" style={ Object.assign({},divStyles, this.props.addStyles)}>
+      <div className={"divContainer "+(!this.props.extraClass ? '' : this.props.extraClass)} style={ Object.assign({},divStyles, this.props.addStyles)}>
         <div className="header">
           <h1 style={subHijosHeader} >{this.props.title}</h1>
           {this.props.handleClear && <button onClick={this.props.handleClear} style={subHijosHeader} >Clear</button>}
         </div>
-        <div className="childrenContainer" style={ this.props.editor ? Object.assign({}, stylesChildrenContainer, {overflowY: 'none'}) : stylesChildrenContainer}>
+        <div className="childrenContainer" style={ !this.props.editor ? stylesChildrenContainer : Object.assign({},stylesChildrenContainer, {overflowY: 'hidden'}) } >
           {this.props.children}
         </div>
       </div>

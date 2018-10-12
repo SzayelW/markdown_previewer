@@ -2,7 +2,7 @@ import React from 'react';
 let style = {
   maxWidth: 'calc(100% - 5px)',
   minWidth: 'calc(100% - 5px)',
-  height: '500px',
+  height: 'calc(100% - 5px)',
   overflowY: 'auto',
   resize: 'none',
 };

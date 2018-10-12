@@ -1,10 +1,41 @@
+:root {
+ --bg-color: lightblue;
+ --high-color: tomato;
+}
+
 .titleApp{
   width:100%;
   text-align: center;
-  height: 50px;
+  height: 70px;
   font-size: 25px;
   font-weight: bolder;
 }
 .mainApp{
   display: flow-root;
+  height: 100vh;
+}
+.header,.mainApp{
+  background-color: var(--bg-color);
+}
+.header{
+  background-color: dodgerblue;
+}
+.previewerContainer{
+  background-color: lightsteelblue;
+}
+pre,code{
+  background-color: var(--high-color);
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin:0px;
+}
+table{
+  border-collapse: collapse;
+}
+th,td{
+  border: 2px solid var(--high-color);
+}
+.previewerContainer .childrenContainer{
+  box-shadow: 4px 4px 4px 3px #7ea1b4 inset;
+  padding: 0px 5px;
 }
