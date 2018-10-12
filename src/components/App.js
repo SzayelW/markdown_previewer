@@ -55,6 +55,7 @@ class App extends Component {
         <DivContainer title="Previewer" extraClass="previewerContainer" addStyles={  {right:0} }>
           <Previewer text={ this.state.text } />
         </DivContainer>
+        <div style={ {textAlign: 'center', fontFamily: "Gochi Hand, cursive" } }>written an coded by <a  rel="noopener noreferrer" href="https://www.freecodecamp.com/szayelw" target="_blank">Andrés López</a></div>
       </div>
     );
   }

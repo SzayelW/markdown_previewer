@@ -2,6 +2,7 @@
   "name": "markdown-previewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ssayelw.github.io/markdown-previewer",
   "dependencies": {
     "marked": "^0.5.1",
     "react": "^16.5.2",
